@@ -1,0 +1,15 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonlabels:
+  cluster: OmniOne
+resources:
+- ../../base/
+
+patches:
+- target:
+    version: v1
+    group: apps
+    kind: Deployment
+    name: hello-world
+  path: deployment-patch.yaml
