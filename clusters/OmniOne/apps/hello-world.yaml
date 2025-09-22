@@ -8,6 +8,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./apps/OmniOne/hello-world
+  path: ./apps/OmniOne/hello-world/base
   prune: true
   wait: true
